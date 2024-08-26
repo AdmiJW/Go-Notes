@@ -2,13 +2,30 @@ package main
 
 import (
 	example "learn_go/go_by_example"
+	recordsAPI "learn_go/records_api"
+	validator "learn_go/validator"
 )
 
 func main() {
+	// ---------------------
+	// --- Records API -----
+	// ---------------------
+	recordsAPI.Init()
+	// recordsAPI.Main()
+
+	// ------------------------------
+	// --- Validator Examples -------
+	// ------------------------------
+	validator.Init()
+	// validator.Simple()
+	// validator.CustomFieldTypes()
+	// validator.StructLevel()
+	// validator.TranslationsAndCustomErrors()
 
 	// ---------------------
 	// --- Go by Example ---
 	// ---------------------
+	example.Init()
 	// example.HelloWorld()
 	// example.Values()
 	// example.Variables()
@@ -91,5 +108,5 @@ func main() {
 	// example.SpawningProcesses()
 	// example.ExecingProcesses()
 	// example.Signals()
-	example.Exit()
+	// example.Exit()
 }
